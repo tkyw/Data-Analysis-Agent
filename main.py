@@ -9,7 +9,7 @@ filterwarnings("ignore")
 load_dotenv()
 
 agent_llm = LLM(
-    model=os.getenv("AGENT_MODEL_NAME"), api_key=os.getenv("CHROMA_OPENAI_API_KEY")
+    model=os.getenv("AGENT_MODEL_NAME"), api_key=os.getenv("OPENAI_API_KEY")
 )
 
 manager_llm = LLM(
